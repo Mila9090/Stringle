@@ -1,0 +1,100 @@
+.avatar {
+    height: 100vh;
+    padding-top: 57px;
+    padding-right: 20px;
+    padding-left: 46px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__picture {
+        position: relative;
+        &:after{
+            content: "+";
+            display: block;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background-color: #5e81f4;
+            font-weight: 700;
+            font-size: 19px;
+            line-height: 32px;
+            text-align: center;
+            color: #fefefe;
+            position: absolute;
+            bottom: 15px;
+            right: 19px;
+            cursor: pointer;
+        }
+    }
+    &__text {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+    }
+    &__out {
+        width: 18px;
+        height: 18px;
+        a {
+            display: block;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+    &__name {
+        margin-top: 29px;
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 30px;
+        color: #111026;
+    }
+    &__role {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #A2A2C2;
+    }
+    &__item {
+        border-radius: none;
+        padding: 0;
+        padding-bottom: 39px;
+    }
+    .boxes__item {
+        align-items: center;
+    }
+    .boxes__level, .boxes__header {
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 26px;
+        color: #111026;
+    }
+    .boxes__level {
+        background-color: #F5F5F7;
+    }
+    .boxes__desc {
+        color: #A2A2C2; 
+    }
+    &__reminder {
+        .schedules__item-header{
+            margin-bottom: 26px;
+        }
+    }
+    .red-back {
+        background-color: #FEF2F3;
+    }
+    .blue-back {
+        background-color: #EEF2FD;
+    }
+}

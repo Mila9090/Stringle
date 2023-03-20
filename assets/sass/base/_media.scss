@@ -1,0 +1,136 @@
+@media (max-width: 1600px) {
+    .container{
+        height: auto;
+        grid-template-areas: 
+                            "menu avatar"
+                            "menu wrapper";
+        grid-template-columns: none;
+    }
+    .avatar{
+        grid-area: avatar;
+        padding-right: 30px;
+        height: auto;
+        &__item {
+            max-width: 354px;
+        }
+        &__level {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+    .boxes__left {
+        align-items: center;
+    }
+    .schedules{
+        height: auto;
+    }
+    .menu {
+        grid-area: menu;
+        display: block;
+        border-right: 1px solid rgb(223, 219, 219);
+        box-shadow: 2px 0 10px 2px rgb(208, 208, 208);
+        &__nav {
+            margin-bottom: 136px;
+        }
+    }
+    .wrapper{
+        grid-area: wrapper;
+    }
+}
+
+
+
+@media (max-width: 1040px) {
+    .container{
+        grid-template-areas: 
+                            "menu avatar"
+                            "wrapper wrapper";
+    }
+    .wrapper{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 820px) {
+    .menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: fit-content;
+        background-color: #fff;
+        z-index: 4;
+    }
+    .burger{
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        &__open {
+            position: absolute;
+            z-index: 3;
+            img{
+                width: 100%;
+            }
+        }
+        &__close{
+            position: absolute;
+            z-index: 5;
+            transform: translate(25%, 10px);
+            img{
+                width: 60%;
+            }
+            
+        }
+    }
+    .container{
+        grid-template-areas: 
+                            "avatar"
+                            "wrapper";
+    }
+    .schedules{
+        &__charts {
+            margin-bottom: 47px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 100%;
+        }
+        &__banner {
+            border-radius: 17px;
+            padding: 212px 77px 49px 77px;
+            justify-content: center;
+        }
+        &__group-text{
+            text-align: center;
+        }
+        &__banner-img {
+            transform: translateX(-25%);
+            left: 37%;
+            top: -47px;
+        }
+    }
+    .avatar__header {
+        justify-content: flex-end;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+
+
+@media (max-width: 410px) {
+    .schedules {
+        padding-right: 0;
+        padding-left: 0;
+        &__items{
+            height: fit-content;
+        }
+    }
+    .avatar{
+        padding-left: 0;
+    }
+}
