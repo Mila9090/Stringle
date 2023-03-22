@@ -1,3 +1,8 @@
+@media (min-width: 1600px) {
+    .wrapper{
+        height: 100vh;
+    }
+}
 @media (max-width: 1600px) {
     .container{
         height: auto;
@@ -5,6 +10,7 @@
                             "menu avatar"
                             "menu wrapper";
         grid-template-columns: none;
+
     }
     .avatar{
         grid-area: avatar;
@@ -37,6 +43,7 @@
     }
     .wrapper{
         grid-area: wrapper;
+        padding: 10px;
     }
 }
 
@@ -123,6 +130,7 @@
 
 
 @media (max-width: 410px) {
+
     .schedules {
         padding-right: 0;
         padding-left: 0;
@@ -131,6 +139,6 @@
         }
     }
     .avatar{
-        padding-left: 0;
+        padding-left: 10px;
     }
 }

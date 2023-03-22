@@ -9,6 +9,11 @@
     }
     &__picture {
         position: relative;
+        width: 169px;
+        height: 171px;
+        border-radius: 50%;
+        border: 7px solid #F5F5FB;
+        background: url('./../img/avatar.png') center/cover no-repeat;
         &:after{
             content: "+";
             display: block;
@@ -22,8 +27,8 @@
             text-align: center;
             color: #fefefe;
             position: absolute;
-            bottom: 15px;
-            right: 19px;
+            bottom: 2px;
+            right: 10px;
             cursor: pointer;
         }
     }
@@ -31,6 +36,9 @@
         font-weight: 500;
         font-size: 17px;
         line-height: 26px;
+    }
+    .boxes__text{
+        max-width: 155px;
     }
     &__out {
         width: 18px;
